@@ -50,7 +50,7 @@
 \pretitle{\begin{center}\Huge\bfseries} % Article title formatting
 \posttitle{\end{center}} % Article title closing formatting
 \title{Virtualizacion y Contenedores} % Article title
-\author{Andre Reinoso, Samuel Nuñez, Andre De la Barra y David Damian}
+\author{Andre Reinoso, Samuel Nuñez, Andres De la Barra y David Damian}
 \date{\today} % Leave empty to omit a date
 \renewcommand{\maketitlehookd}{%
 \begin{abstract}
@@ -71,7 +71,10 @@
 
 \section{Introduccion}
 
-\lettrine[nindent=0em,lines=3]{A}aca ba el texto de la introduccion
+\lettrine[nindent=0em,lines=3]{L}a virtualización ha sido identificada como una de las diez tecnologías estratégicas en el año 2010. Consiste en la extracción del software de una computadora, encapsulándolo en algo que llamaremos máquina virtual, que será ejecutada en una máquina física ajena a la anterior.
+Años después surgieron los contenedores, son la vía que nos coloca Docker para tener el mismo uso que con las maquinas virtuales creadas de la forma tradicional. Docker utiliza estos contenedores para aislar uno o más procesos. Estos procesos en el Host necesitan Memoria, CPU, Acceso a la Red y espacio en disco. Es un ambiente perfecto para que las aplicaciones puedes funcionar de forma correcta.
+En el presente trabajo se definirán los conceptos de maquina virtual, contenedores y se tratara el tema de la diferencia entre ambos.
+
 
 
 %------------------------------------------------
@@ -95,7 +98,16 @@ Lorem Lorem lorem lorem lorem.
 
 \subsection{¿Que es una maquina virtual?}
 
-Eleifend ullamcorper nisl adipiscing ad a vestibulum convallis etiam curabitur fermentum lacus ut tempor dictum phasellus porta imperdiet ullamcorper leo curae consequat orci leo feugiat a habitasse vehicula massa arcu. \cite{Figueredo:2009dg}.
+Una máquina virtual es un software que emula un ordenador justo como si fuese uno real. Todo esto sucede en una ventana dentro de tu sistema operativo actual como cualquier otro programa que uses. La idea de este tipo de software es que puedas ejecutar sistemas operativos como si fuesen una aplicación, mientras este cree que está usando el hardware de un ordenador físico común. Cada vez que quieras usar este sistema operativo puedes abrir el software de virtualización y «encender» tu máquina.
+Un sistema de virtualización debe ser capaz de ofrecer una interfaz en la máquina anfitriona para poder interactuar con el sistema operativo de la máquina virtual. Además, la máquina anfitriona debe ofrecer una interfaz de sus recursos a la máquina virtual para que pueda utilizarlos. De estas interfaces de comunicación se encarga un software que se instala en la máquina anfitriona para poder ejecutar las máquinas virtuales. Existen muchos tipos de software de virtualización en el mercado, tanto software propietario como software libre y para ejecutarse sobre máquinas anfitrionas que funcionen como servidores, o bien sobre cualquier computadora personal. Entre los más utilizados están VirtualBox y Virtual PC para computadoras personales, Xen y KVM para servidor, y VMware para ambos. (Martin, 2011)
+
+Lo que sucede es que se ejecuta en una ventana, igual que cualquier otro programa, y permite que el usuario final tenga la misma experiencia en una máquina virtual que tendría en el propio sistema operativo host. La máquina virtual se sitúa en un espacio aislado del resto del sistema, es decir, el software de la máquina virtual no puede interferir con el equipo en sí. Esto crea un entorno ideal para probar otros sistemas operativos, incluidas versiones beta, acceder a datos infectados por virus, crear copias de seguridad de sistemas operativos y ejecutar software o aplicaciones en sistemas operativos para los que no se habían creado inicialmente.
+Se pueden ejecutar varias máquinas virtuales a la vez en un mismo equipo físico. Para servidores, los diversos sistemas operativos se ejecutan en paralelo con un fragmento de software denominado hipervisor para administrarlos, mientras que los equipos de escritorio suelen implementar un solo sistema operativo para ejecutar los demás sistemas operativos en ventanas de programa. Cada máquina virtual proporciona su propio hardware virtual, incluidas las CPU, memoria, unidades de disco duro, interfaces de red y otros dispositivos. El hardware virtual se asigna después al hardware real de la máquina física, lo que permite ahorrar costos, porque reduce la necesidad de tener sistemas de hardware físico, con los costos de mantenimiento que conllevan, y también reduce la demanda de alimentación y refrigeración.
+
+\begin{center}
+	\includegraphics[width=5cm]{./Imagenes/virtualizacion} 
+	\end{center}
+
 
 
 \subsection{¿Que es un contenedor?}
@@ -157,11 +169,12 @@ Lorem Lorem lorem lorem lorem.
 
 \begin{thebibliography}{99} % Bibliography - this is intentionally simple in this template
 
-\bibitem[Figueredo and Wolf, 2009]{Figueredo:2009dg}
-Figueredo, A.~J. and Wolf, P. S.~A. (2009).
-\newblock Assortative pairing and life history strategy - a cross-cultural
-  study.
-\newblock {\em Human Nature}, 20:317--330.
+\bibitem[Martin, 2011]{Diego Martin:2011dg}
+Martin, M.M,  y J.U (2011).
+\newblock Virtualización, una solución para la eficiencia,
+seguridad y administración de intranets
+\newblock {\em El profesional de la informacion}, 350.
+ 
  
 \end{thebibliography}
 
