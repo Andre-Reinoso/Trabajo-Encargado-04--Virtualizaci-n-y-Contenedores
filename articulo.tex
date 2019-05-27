@@ -110,8 +110,43 @@ Se pueden ejecutar varias máquinas virtuales a la vez en un mismo equipo físic
 
 
 
+
 \subsection{¿Que es un contenedor?}
-Eleifend ullamcorper nisl adipiscing ad a vestibulum convallis etiam curabitur fermentum lacus ut tempor dictum phasellus porta imperdiet ullamcorper leo curae consequat orci leo feugiat a habitasse vehicula massa arcu.
+
+Los contenedores son aplicaciones y servicios autónomos que encapsulan todas las dependencias para que sean fácilmente implementables y actualizables.\\
+Los contenedores son aplicaciones independientes, empaquetadas con sus dependencias.\\
+Los contenedores se distribuyen fácilmente a través de una plataforma virtual.
+
+\begin{itemize}
+\item Docker
+\\ Éste contenedor empaqueta todo lo necesario para que uno o más procesos (servicios o
+aplicaciones) funcionen: código, herramientas del sistema, bibliotecas del sistema, dependencias,
+etc.
+\\Usos de Docker
+\\Ya que los contenedores te dan un ambiente aislado del resto del sistema, las posibilidades de
+trabajo incluyen
+\\ \textbf{- Empaquetamiento y despliegue de aplicaciones automatizado y controlado}
+\\ \textbf{- Creación Ambientes de PaaS.}
+\\ \textbf{- Testing e integración continua}
+\\ \textbf{- Despliegue y escalamiento de aplicaciones y bases de datos.}
+
+\begin{center}
+	\includegraphics[width=5cm]{./Imagenes/docker} 
+	\end{center}
+
+\\ Ventajas
+\\ \textbf{- Las instancias se inician en pocos segundos.}
+\\ \textbf{- Son fácilmente replicables.}
+\\ \textbf{- Es fácil de automatizar y de integrar en entornos de integración continua.}
+\\ \textbf{- Consumen menos recursos que las máquinas virtuales tradicionales.}
+\\ \textbf{- Ocupan mucho menos espacio.}
+\\ \textbf{-Permite aislar las dependencias de una aplicación de las instaladas en el host.}
+
+\\ Desventajas
+\\ \textbf{- Sólo puede usarse de forma nativa en entornos Unix con Kernel igual o superior a 3.8.}
+\\ \textbf{- Sólo soporta arquitecturas de 64 bits.}
+\\ \textbf{- Como es relativamente nuevo, puede haber errores de código entre versiones.}
+\end{itemize} 
 
 \subsection{¿Diferencia entre maquinas virtuales y contenedores?}
 El objetivo principal de estas tecnologias, es la de dar un entorno de desarrollo con ciertas caracteristicas por lo que parecen estas tecnologias, maquinas virtuales y contenedores, donde la primera es una copia exacta del software y hardware, en cambio los contenedores no hay una copia si no que tienen los archivos necesarios para poder correr un determinado software.
